@@ -73,3 +73,58 @@ List<Categories> hotProductList = [
         "https://s3-ap-southeast-1.amazonaws.com/pcms.production.mcshop/catalog/product/_/_/__regula___mtsp66620_s_1__4.jpg",
   ),
 ];
+
+List<Categories> featuredList = [
+  Categories(
+    title: "Sunglasses",
+    imageUrl:
+        "http://cdn.shopify.com/s/files/1/1558/7305/collections/group_hero.jpg?v=1667863810",
+  ),
+  Categories(
+    title: "Sweater",
+    imageUrl:
+        "https://publish.purewow.net/wp-content/uploads/sites/2/2022/10/fisherman-sweater-fall-winter-sweater-trends-2022.jpg?fit=750%2C882",
+  ),
+  Categories(
+    title: "Boxers",
+    imageUrl:
+        "https://breadandboxers.dk/pub_images/original/202-02_Man_Boxer-Brief_black_1.jpg",
+  ),
+  Categories(
+    title: "Shorts",
+    imageUrl:
+        "https://storage.sg.content-cdn.io/cdn-cgi/image/width=542,height=723,quality=75,format=auto,fit=cover,g=top/in-resources/21e9ae3c-de72-4391-9c4a-c7af58447630/Images/ProductImages/Source/levis-mens-412-slim-shorts-393870016_01_Front.jpg",
+  ),
+];
+
+List<Categories> forCustomerList = [
+  Categories(
+    title: "Clock",
+    imageUrl:
+        "https://ii1.pepperfry.com/media/catalog/product/b/l/800x880/black-colour-metal-wall-clock-black-colour-metal-wall-clock-e3hucj.jpg",
+  ),
+  Categories(
+    title: "Hat",
+    imageUrl:
+        "https://img.ssensemedia.com/images/222666F015002_1/low-classic-ssense-exclusive-black-faux-leather-bucket-hat.jpg",
+  ),
+  Categories(
+    title: "Necklaces",
+    imageUrl:
+        "https://i.etsystatic.com/7371176/r/il/4ddbff/1319351868/il_570xN.1319351868_b7jh.jpg",
+  ),
+  Categories(
+    title: "Sneaker",
+    imageUrl:
+        "https://assets.hermes.com/is/image/hermesproduct/day-sneaker--212256Z%2002-worn-2-0-0-800-800_b.jpg",
+  ),
+  Categories(
+    title: "Bed",
+    imageUrl:
+        "https://www.ikea.com/th/en/images/products/gladstad-upholstered-bed-frame-kabusa-light-grey__1056449_ph182866_s5.jpg?f=s",
+  ),
+  Categories(
+    title: "Earphone",
+    imageUrl: "https://n3.sdlcdn.com/imgs/k/j/q/IMG_4213-3d935.JPG",
+  ),
+];
