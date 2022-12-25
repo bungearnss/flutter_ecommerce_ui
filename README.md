@@ -1,6 +1,8 @@
 # flutter_ecommerce_ui
 
 A new Flutter project.
+![ecommerce_1](https://user-images.githubusercontent.com/66944039/209463701-b27aa8a8-20de-47b2-a84d-f7c4bb1de94c.png)
+
 
 ## Getting Started
 
