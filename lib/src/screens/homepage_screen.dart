@@ -52,6 +52,7 @@ class _HomepageScreenState extends State<HomepageScreen> {
     return GestureDetector(
       onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
       child: Scaffold(
+        backgroundColor: Colors.grey.shade100,
         body: SingleChildScrollView(
           child: Column(
             children: [
@@ -97,6 +98,24 @@ class _HomepageScreenState extends State<HomepageScreen> {
                         height: height / 7,
                         itemCount: hotProductList.length,
                         categories: hotProductList,
+                      ),
+                      const SizedBox(height: 15),
+                      const ExpandedMore(txt: "Featured", delay: 2),
+                      HomeCategories(
+                        isBig: true,
+                        width: width / 4,
+                        height: height / 7,
+                        itemCount: featuredList.length,
+                        categories: featuredList,
+                      ),
+                      const SizedBox(height: 15),
+                      const ExpandedMore(txt: "Bests For Customer", delay: 2),
+                      HomeCategories(
+                        isBig: true,
+                        width: width / 4,
+                        height: height / 7,
+                        itemCount: forCustomerList.length,
+                        categories: forCustomerList,
                       ),
                     ],
                   ),

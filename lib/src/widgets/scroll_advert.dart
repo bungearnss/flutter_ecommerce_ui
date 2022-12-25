@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 class ScrollAdvert extends StatelessWidget {
@@ -20,6 +21,8 @@ class ScrollAdvert extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Container(
           margin: const EdgeInsets.only(top: 10.0),
@@ -42,7 +45,31 @@ class ScrollAdvert extends StatelessWidget {
               );
             },
           ),
-        )
+        ),
+        Container(
+          margin: const EdgeInsets.only(top: 5),
+          width: size.width,
+          height: 8,
+          alignment: Alignment.center,
+          child: ListView.builder(
+            shrinkWrap: true,
+            scrollDirection: Axis.horizontal,
+            physics: const NeverScrollableScrollPhysics(),
+            itemCount: itemCount,
+            itemBuilder: (context, index) {
+              return Container(
+                width: 8,
+                margin: const EdgeInsets.symmetric(horizontal: 2),
+                decoration: BoxDecoration(
+                  color: currentIndex == index
+                      ? Colors.grey.shade500
+                      : Colors.grey.shade300,
+                  borderRadius: BorderRadius.circular(30),
+                ),
+              );
+            },
+          ),
+        ),
       ],
     );
   }
