@@ -9,13 +9,13 @@ class CustomAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       width: size.width,
-      height: size.height / 5.7,
+      height: size.height / 5.5,
       child: Stack(children: [
         Container(
           width: size.width,
-          height: size.height,
+          height: size.height / 7,
           decoration: const BoxDecoration(
-            color: Colors.deepPurpleAccent,
+            color: Color.fromARGB(255, 25, 125, 247),
             borderRadius: BorderRadius.only(
               bottomLeft: Radius.circular(40),
               bottomRight: Radius.circular(40),
@@ -39,7 +39,6 @@ class CustomAppBar extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(width: 10),
-                const Text("Home"),
                 Expanded(child: Container()),
                 IconButton(
                   onPressed: () {},
@@ -62,7 +61,7 @@ class CustomAppBar extends StatelessWidget {
           ),
         ),
         Positioned(
-          bottom: 20,
+          bottom: 12,
           left: 20,
           right: 20,
           child: Material(
