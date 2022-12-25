@@ -14,7 +14,7 @@ class ExpandedMore extends StatelessWidget {
           children: [
             Text(
               txt,
-              style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+              style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
             Expanded(child: Container()),
             Row(
