@@ -1,16 +1,14 @@
 import 'package:flutter/material.dart';
 
 class ScrollAdvert extends StatelessWidget {
-  final TextTheme textTheme;
   final Size size;
   final int currentIndex;
   final PageController pageController;
   final Function(int) pageChange;
   final int itemCount;
-  final String imageUrl;
+  final List<String> imageUrl;
   const ScrollAdvert({
     super.key,
-    required this.textTheme,
     required this.size,
     required this.currentIndex,
     required this.pageController,
@@ -26,7 +24,7 @@ class ScrollAdvert extends StatelessWidget {
         Container(
           margin: const EdgeInsets.only(top: 10.0),
           width: size.width,
-          height: size.height,
+          height: size.height / 5,
           child: PageView.builder(
             onPageChanged: pageChange,
             controller: pageController,
@@ -35,9 +33,9 @@ class ScrollAdvert extends StatelessWidget {
             itemBuilder: (context, index) {
               return Container(
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(30),
+                  borderRadius: BorderRadius.circular(10),
                   image: DecorationImage(
-                    image: NetworkImage(imageUrl),
+                    image: NetworkImage(imageUrl[index]),
                     fit: BoxFit.cover,
                   ),
                 ),

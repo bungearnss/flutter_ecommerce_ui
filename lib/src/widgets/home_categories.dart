@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
+import '../models/categories.dart';
+
 class HomeCategories extends StatelessWidget {
   final Size size;
   final int itemCount;
-  final String imageUrl;
-  final String cateTitle;
+  final List<Categories> categories;
   const HomeCategories({
     super.key,
     required this.size,
     required this.itemCount,
-    required this.imageUrl,
-    required this.cateTitle,
+    required this.categories,
   });
 
   @override
@@ -33,12 +33,12 @@ class HomeCategories extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
                   image: DecorationImage(
-                    image: NetworkImage(imageUrl),
+                    image: NetworkImage(categories[index].imageUrl),
                     fit: BoxFit.cover,
                   ),
                 ),
               ),
-              Text(cateTitle)
+              Text(categories[index].title),
             ],
           );
         },
