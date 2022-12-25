@@ -40,3 +40,36 @@ List<Categories> cateList = [
       imageUrl:
           "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/walk-in-closet-ideas-hbx0613112d-1658252493.jpg?crop=0.447xw:1.00xh;0.141xw,0&resize=480:*"),
 ];
+
+List<Categories> hotProductList = [
+  Categories(
+    title: "Jacket",
+    imageUrl:
+        "https://bodyglove.co.th/pub/media/catalog/product/cache/1c2895b3508b3ae76c261d338e2836b6/s/2/s21-1509.jpg",
+  ),
+  Categories(
+    title: "Blazer",
+    imageUrl:
+        "https://www.na-kd.com/globalassets/heavy_oversized_blazer-1018-009031-0002_3308.jpg?ref=2DA0685A54",
+  ),
+  Categories(
+    title: "T-shirt",
+    imageUrl:
+        "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/65ca5733-c340-4b86-bf1b-312ec2812cbd/jordan-essentials-jumpman-t-shirt-jFjKvg.png",
+  ),
+  Categories(
+    title: "long-sleeved",
+    imageUrl:
+        "https://n4.sdlcdn.com/imgs/a/k/m/T10-Sports-Gray-Full-Polo-SDL791971640-3-fbfc9.JPG",
+  ),
+  Categories(
+    title: "Dress",
+    imageUrl:
+        "https://cdn.shopify.com/s/files/1/0613/0316/1058/products/210201_stfrock_strickland_house_adr1115-2a-sf_blush_0086_1.jpg?v=1645554520",
+  ),
+  Categories(
+    title: "Coat",
+    imageUrl:
+        "https://s3-ap-southeast-1.amazonaws.com/pcms.production.mcshop/catalog/product/_/_/__regula___mtsp66620_s_1__4.jpg",
+  ),
+];
